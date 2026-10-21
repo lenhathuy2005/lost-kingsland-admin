@@ -1,0 +1,14 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.tmp/
+# Local artwork store; production should use backed-up object storage/CDN.
+data/media/*
+!data/media/.gitkeep
+data/game_icons_cache/
+logs/
+*.log
+hs_err_pid*
+replay_pid*
+lost-kingsland-admin/

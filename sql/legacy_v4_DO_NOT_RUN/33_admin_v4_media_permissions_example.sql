@@ -1,0 +1,4 @@
+-- Example additive grants for the Admin DB role. Adjust role name to your environment.
+-- GRANT SELECT, INSERT, UPDATE, DELETE ON platform.entity_media_links TO lost_kingsland_admin;
+-- GRANT SELECT, INSERT, UPDATE, DELETE ON platform.media_assets TO lost_kingsland_admin;
+-- GRANT SELECT, UPDATE ON inventory.item_defs TO lost_kingsland_admin;

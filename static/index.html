@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lost Kingsland — Admin Console</title>
+  <link rel="stylesheet" href="/static/styles.css?v=7.2.1" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">LK</div>
+        <div>
+          <div class="brand-title">Lost Kingsland</div>
+          <div class="brand-subtitle">Admin Console V27 Operator 7.1</div>
+        </div>
+      </div>
+      <div id="modePill" class="mode-pill">Đang kết nối…</div>
+
+      <nav class="nav" aria-label="Admin navigation">
+        <div class="nav-section">VẬN HÀNH CHÍNH</div>
+        <a href="#command" data-route="command" class="nav-item active"><span>✺</span>Tổng quan</a>
+        <a href="#players" data-route="players" class="nav-item"><span>♙</span>Người chơi</a>
+        <a href="#giftcodes" data-route="giftcodes" class="nav-item"><span>🎁</span>Giftcode</a>
+        <a href="#titles" data-route="titles" class="nav-item"><span>🏷</span>Danh hiệu & Buff</a>
+        <a href="#shop" data-route="shop" class="nav-item"><span>🛒</span>Cửa hàng hệ thống</a>
+        <a href="#topup" data-route="topup" class="nav-item"><span>💳</span>Thanh toán / Nạp tiền</a>
+        <a href="#discordprofile" data-route="discordprofile" class="nav-item"><span>◉</span>Hồ sơ Discord</a>
+
+        <div class="nav-section">NỘI DUNG & ẢNH</div>
+        <a href="#items" data-route="items" class="nav-item"><span>◆</span>Trang bị & Item</a>
+        <a href="#materials" data-route="materials" class="nav-item nav-accent"><span>⛏</span>Tài nguyên & Ore</a>
+        <a href="#characters" data-route="characters" class="nav-item"><span>♛</span>Nhân vật & Ảnh</a>
+        <a href="#gachacultivation" data-route="gachacultivation" class="nav-item nav-accent"><span>✧</span>Gacha & Tu luyện</a>
+        <a href="#sets" data-route="sets" class="nav-item"><span>✦</span>Bộ trang bị</a>
+        <a href="#media" data-route="media" class="nav-item"><span>▣</span>Kho ảnh</a>
+        <a href="#testmedia" data-route="testmedia" class="nav-item nav-accent"><span>⚡</span>Ảnh test & Bot</a>
+
+        <div class="nav-section">KIỂM TRA</div>
+        <a href="#quality" data-route="quality" class="nav-item"><span>✓</span>Data Quality</a>
+        <a href="#liveops" data-route="liveops" class="nav-item"><span>⚑</span>LiveOps</a>
+
+        <a href="#crud" data-route="crud" class="nav-item"><span>⚔</span>Quái, Boss & Cấu hình</a>
+        <div class="nav-advanced advanced-only hidden">
+          <div class="nav-section">NÂNG CAO</div>
+          <a href="#dashboard" data-route="dashboard" class="nav-item"><span>◈</span>Dashboard kỹ thuật</a>
+          <a href="#contentmedia" data-route="contentmedia" class="nav-item"><span>◫</span>Ảnh Content khác</a>
+          <a href="#character" data-route="character" class="nav-item"><span>♜</span>Config Nhân vật</a>
+          <a href="#world" data-route="world" class="nav-item"><span>◉</span>Config Thế giới & PvE</a>
+          <a href="#progression" data-route="progression" class="nav-item"><span>▤</span>Config Progression</a>
+          <a href="#social" data-route="social" class="nav-item"><span>♟</span>Config Commander & Clan</a>
+          <a href="#economy" data-route="economy" class="nav-item"><span>◈</span>Config Economy & Market</a>
+          
+          <a href="#runtime" data-route="runtime" class="nav-item"><span>◎</span>Runtime Data</a>
+          <a href="#discordops" data-route="discordops" class="nav-item"><span>◌</span>Discord Ops</a>
+          <a href="#ops" data-route="ops" class="nav-item"><span>⚠</span>Audit / Abuse</a>
+          <a href="#bulk" data-route="bulk" class="nav-item"><span>⇅</span>Bulk Tools</a>
+          <a href="#database" data-route="database" class="nav-item"><span>▦</span>Database Explorer</a>
+          <a href="#staged" data-route="staged" class="nav-item"><span>≡</span>Staged changes <b id="stagedCount" class="count-badge">0</b></a>
+        </div>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="safe-note">V7.1 Operator: 10 tài nguyên nền + 90 ore chế tạo theo 9 slot × 10 phẩm chất, gồm PET, quản lý ảnh trực tiếp, Giftcode, Player Control và shared media.</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <div id="pageEyebrow" class="eyebrow">ADMIN</div>
+          <h1 id="pageTitle">Dashboard</h1>
+        </div>
+        <div class="global-search"><input id="globalSearch" placeholder="Tìm toàn hệ thống: item, player, set…"><div id="globalSearchResults" class="global-search-results hidden"></div></div>
+        <div class="top-actions">
+          <button id="advancedToggle" class="btn btn-secondary">⚙ Hiện nâng cao</button>
+          <button id="refreshBtn" class="btn btn-secondary">↻ Làm mới</button>
+          <button id="exportBtn" class="btn btn-primary advanced-only hidden">Xuất SQL</button>
+        </div>
+      </header>
+
+      <section id="notice" class="notice hidden"></section>
+      <section id="page" class="page"></section>
+    </main>
+  </div>
+
+  <div id="drawerBackdrop" class="drawer-backdrop hidden"></div>
+  <aside id="drawer" class="drawer hidden" aria-label="Chi tiết">
+    <div class="drawer-head">
+      <div>
+        <div id="drawerEyebrow" class="eyebrow">DETAIL</div>
+        <h2 id="drawerTitle">Chi tiết</h2>
+      </div>
+      <button id="drawerClose" class="icon-btn">×</button>
+    </div>
+    <div id="drawerBody" class="drawer-body"></div>
+  </aside>
+
+  <script src="/static/structured-editor.js?v=7.3.0"></script>
+  <script src="/static/app.js?v=7.3.3"></script>
+</body>
+</html>

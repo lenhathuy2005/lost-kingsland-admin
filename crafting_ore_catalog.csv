@@ -1,0 +1,91 @@
+﻿code,display_name_vi,target_slot,target_rarity,purpose_vi,demo_craft_cost
+ORE_HELM_COMMON,Phàm Thiết Khôi Khoáng,HELM,COMMON,Chỉ dùng để chế mũ/đạo quan phẩm COMMON.,20
+ORE_CHEST_COMMON,Phàm Thiết Giáp Khoáng,CHEST,COMMON,Chỉ dùng để chế giáp thân phẩm COMMON.,20
+ORE_SHOULDER_COMMON,Phàm Thiết Hộ Kiên Khoáng,SHOULDER,COMMON,Chỉ dùng để chế vai giáp phẩm COMMON.,20
+ORE_AMULET_COMMON,Phàm Thiết Linh Phù Khoáng,AMULET,COMMON,Chỉ dùng để chế dây chuyền/phù phẩm COMMON.,20
+ORE_BOOTS_COMMON,Phàm Thiết Hành Bộ Khoáng,BOOTS,COMMON,Chỉ dùng để chế giày/ủng phẩm COMMON.,20
+ORE_RING_COMMON,Phàm Thiết Giới Chỉ Khoáng,RING,COMMON,Chỉ dùng để chế nhẫn phẩm COMMON.,20
+ORE_OFF_HAND_COMMON,Phàm Thiết Phụ Bảo Khoáng,OFF_HAND,COMMON,Chỉ dùng để chế pháp bảo tay phụ phẩm COMMON.,20
+ORE_WEAPON_COMMON,Phàm Thiết Binh Nhận Khoáng,WEAPON,COMMON,Chỉ dùng để chế vũ khí phẩm COMMON.,20
+ORE_PET_COMMON,Phàm Thiết Linh Thú Khoáng,PET,COMMON,Chỉ dùng để chế Linh Thú/PET phẩm COMMON.,20
+ORE_HELM_UNCOMMON,Linh Đồng Khôi Khoáng,HELM,UNCOMMON,Chỉ dùng để chế mũ/đạo quan phẩm UNCOMMON.,20
+ORE_CHEST_UNCOMMON,Linh Đồng Giáp Khoáng,CHEST,UNCOMMON,Chỉ dùng để chế giáp thân phẩm UNCOMMON.,20
+ORE_SHOULDER_UNCOMMON,Linh Đồng Hộ Kiên Khoáng,SHOULDER,UNCOMMON,Chỉ dùng để chế vai giáp phẩm UNCOMMON.,20
+ORE_AMULET_UNCOMMON,Linh Đồng Linh Phù Khoáng,AMULET,UNCOMMON,Chỉ dùng để chế dây chuyền/phù phẩm UNCOMMON.,20
+ORE_BOOTS_UNCOMMON,Linh Đồng Hành Bộ Khoáng,BOOTS,UNCOMMON,Chỉ dùng để chế giày/ủng phẩm UNCOMMON.,20
+ORE_RING_UNCOMMON,Linh Đồng Giới Chỉ Khoáng,RING,UNCOMMON,Chỉ dùng để chế nhẫn phẩm UNCOMMON.,20
+ORE_OFF_HAND_UNCOMMON,Linh Đồng Phụ Bảo Khoáng,OFF_HAND,UNCOMMON,Chỉ dùng để chế pháp bảo tay phụ phẩm UNCOMMON.,20
+ORE_WEAPON_UNCOMMON,Linh Đồng Binh Nhận Khoáng,WEAPON,UNCOMMON,Chỉ dùng để chế vũ khí phẩm UNCOMMON.,20
+ORE_PET_UNCOMMON,Linh Đồng Linh Thú Khoáng,PET,UNCOMMON,Chỉ dùng để chế Linh Thú/PET phẩm UNCOMMON.,20
+ORE_HELM_RARE,Huyền Ngân Khôi Khoáng,HELM,RARE,Chỉ dùng để chế mũ/đạo quan phẩm RARE.,20
+ORE_CHEST_RARE,Huyền Ngân Giáp Khoáng,CHEST,RARE,Chỉ dùng để chế giáp thân phẩm RARE.,20
+ORE_SHOULDER_RARE,Huyền Ngân Hộ Kiên Khoáng,SHOULDER,RARE,Chỉ dùng để chế vai giáp phẩm RARE.,20
+ORE_AMULET_RARE,Huyền Ngân Linh Phù Khoáng,AMULET,RARE,Chỉ dùng để chế dây chuyền/phù phẩm RARE.,20
+ORE_BOOTS_RARE,Huyền Ngân Hành Bộ Khoáng,BOOTS,RARE,Chỉ dùng để chế giày/ủng phẩm RARE.,20
+ORE_RING_RARE,Huyền Ngân Giới Chỉ Khoáng,RING,RARE,Chỉ dùng để chế nhẫn phẩm RARE.,20
+ORE_OFF_HAND_RARE,Huyền Ngân Phụ Bảo Khoáng,OFF_HAND,RARE,Chỉ dùng để chế pháp bảo tay phụ phẩm RARE.,20
+ORE_WEAPON_RARE,Huyền Ngân Binh Nhận Khoáng,WEAPON,RARE,Chỉ dùng để chế vũ khí phẩm RARE.,20
+ORE_PET_RARE,Huyền Ngân Linh Thú Khoáng,PET,RARE,Chỉ dùng để chế Linh Thú/PET phẩm RARE.,20
+ORE_HELM_EPIC,Địa Tủy Khôi Khoáng,HELM,EPIC,Chỉ dùng để chế mũ/đạo quan phẩm EPIC.,20
+ORE_CHEST_EPIC,Địa Tủy Giáp Khoáng,CHEST,EPIC,Chỉ dùng để chế giáp thân phẩm EPIC.,20
+ORE_SHOULDER_EPIC,Địa Tủy Hộ Kiên Khoáng,SHOULDER,EPIC,Chỉ dùng để chế vai giáp phẩm EPIC.,20
+ORE_AMULET_EPIC,Địa Tủy Linh Phù Khoáng,AMULET,EPIC,Chỉ dùng để chế dây chuyền/phù phẩm EPIC.,20
+ORE_BOOTS_EPIC,Địa Tủy Hành Bộ Khoáng,BOOTS,EPIC,Chỉ dùng để chế giày/ủng phẩm EPIC.,20
+ORE_RING_EPIC,Địa Tủy Giới Chỉ Khoáng,RING,EPIC,Chỉ dùng để chế nhẫn phẩm EPIC.,20
+ORE_OFF_HAND_EPIC,Địa Tủy Phụ Bảo Khoáng,OFF_HAND,EPIC,Chỉ dùng để chế pháp bảo tay phụ phẩm EPIC.,20
+ORE_WEAPON_EPIC,Địa Tủy Binh Nhận Khoáng,WEAPON,EPIC,Chỉ dùng để chế vũ khí phẩm EPIC.,20
+ORE_PET_EPIC,Địa Tủy Linh Thú Khoáng,PET,EPIC,Chỉ dùng để chế Linh Thú/PET phẩm EPIC.,20
+ORE_HELM_LEGENDARY,Thiên Tinh Khôi Khoáng,HELM,LEGENDARY,Chỉ dùng để chế mũ/đạo quan phẩm LEGENDARY.,20
+ORE_CHEST_LEGENDARY,Thiên Tinh Giáp Khoáng,CHEST,LEGENDARY,Chỉ dùng để chế giáp thân phẩm LEGENDARY.,20
+ORE_SHOULDER_LEGENDARY,Thiên Tinh Hộ Kiên Khoáng,SHOULDER,LEGENDARY,Chỉ dùng để chế vai giáp phẩm LEGENDARY.,20
+ORE_AMULET_LEGENDARY,Thiên Tinh Linh Phù Khoáng,AMULET,LEGENDARY,Chỉ dùng để chế dây chuyền/phù phẩm LEGENDARY.,20
+ORE_BOOTS_LEGENDARY,Thiên Tinh Hành Bộ Khoáng,BOOTS,LEGENDARY,Chỉ dùng để chế giày/ủng phẩm LEGENDARY.,20
+ORE_RING_LEGENDARY,Thiên Tinh Giới Chỉ Khoáng,RING,LEGENDARY,Chỉ dùng để chế nhẫn phẩm LEGENDARY.,20
+ORE_OFF_HAND_LEGENDARY,Thiên Tinh Phụ Bảo Khoáng,OFF_HAND,LEGENDARY,Chỉ dùng để chế pháp bảo tay phụ phẩm LEGENDARY.,20
+ORE_WEAPON_LEGENDARY,Thiên Tinh Binh Nhận Khoáng,WEAPON,LEGENDARY,Chỉ dùng để chế vũ khí phẩm LEGENDARY.,20
+ORE_PET_LEGENDARY,Thiên Tinh Linh Thú Khoáng,PET,LEGENDARY,Chỉ dùng để chế Linh Thú/PET phẩm LEGENDARY.,20
+ORE_HELM_MYTHIC,Thái Hư Khôi Khoáng,HELM,MYTHIC,Chỉ dùng để chế mũ/đạo quan phẩm MYTHIC.,20
+ORE_CHEST_MYTHIC,Thái Hư Giáp Khoáng,CHEST,MYTHIC,Chỉ dùng để chế giáp thân phẩm MYTHIC.,20
+ORE_SHOULDER_MYTHIC,Thái Hư Hộ Kiên Khoáng,SHOULDER,MYTHIC,Chỉ dùng để chế vai giáp phẩm MYTHIC.,20
+ORE_AMULET_MYTHIC,Thái Hư Linh Phù Khoáng,AMULET,MYTHIC,Chỉ dùng để chế dây chuyền/phù phẩm MYTHIC.,20
+ORE_BOOTS_MYTHIC,Thái Hư Hành Bộ Khoáng,BOOTS,MYTHIC,Chỉ dùng để chế giày/ủng phẩm MYTHIC.,20
+ORE_RING_MYTHIC,Thái Hư Giới Chỉ Khoáng,RING,MYTHIC,Chỉ dùng để chế nhẫn phẩm MYTHIC.,20
+ORE_OFF_HAND_MYTHIC,Thái Hư Phụ Bảo Khoáng,OFF_HAND,MYTHIC,Chỉ dùng để chế pháp bảo tay phụ phẩm MYTHIC.,20
+ORE_WEAPON_MYTHIC,Thái Hư Binh Nhận Khoáng,WEAPON,MYTHIC,Chỉ dùng để chế vũ khí phẩm MYTHIC.,20
+ORE_PET_MYTHIC,Thái Hư Linh Thú Khoáng,PET,MYTHIC,Chỉ dùng để chế Linh Thú/PET phẩm MYTHIC.,20
+ORE_HELM_ANCIENT,Hồng Hoang Khôi Khoáng,HELM,ANCIENT,Chỉ dùng để chế mũ/đạo quan phẩm ANCIENT.,20
+ORE_CHEST_ANCIENT,Hồng Hoang Giáp Khoáng,CHEST,ANCIENT,Chỉ dùng để chế giáp thân phẩm ANCIENT.,20
+ORE_SHOULDER_ANCIENT,Hồng Hoang Hộ Kiên Khoáng,SHOULDER,ANCIENT,Chỉ dùng để chế vai giáp phẩm ANCIENT.,20
+ORE_AMULET_ANCIENT,Hồng Hoang Linh Phù Khoáng,AMULET,ANCIENT,Chỉ dùng để chế dây chuyền/phù phẩm ANCIENT.,20
+ORE_BOOTS_ANCIENT,Hồng Hoang Hành Bộ Khoáng,BOOTS,ANCIENT,Chỉ dùng để chế giày/ủng phẩm ANCIENT.,20
+ORE_RING_ANCIENT,Hồng Hoang Giới Chỉ Khoáng,RING,ANCIENT,Chỉ dùng để chế nhẫn phẩm ANCIENT.,20
+ORE_OFF_HAND_ANCIENT,Hồng Hoang Phụ Bảo Khoáng,OFF_HAND,ANCIENT,Chỉ dùng để chế pháp bảo tay phụ phẩm ANCIENT.,20
+ORE_WEAPON_ANCIENT,Hồng Hoang Binh Nhận Khoáng,WEAPON,ANCIENT,Chỉ dùng để chế vũ khí phẩm ANCIENT.,20
+ORE_PET_ANCIENT,Hồng Hoang Linh Thú Khoáng,PET,ANCIENT,Chỉ dùng để chế Linh Thú/PET phẩm ANCIENT.,20
+ORE_HELM_DIVINE,Thần Tiêu Khôi Khoáng,HELM,DIVINE,Chỉ dùng để chế mũ/đạo quan phẩm DIVINE.,20
+ORE_CHEST_DIVINE,Thần Tiêu Giáp Khoáng,CHEST,DIVINE,Chỉ dùng để chế giáp thân phẩm DIVINE.,20
+ORE_SHOULDER_DIVINE,Thần Tiêu Hộ Kiên Khoáng,SHOULDER,DIVINE,Chỉ dùng để chế vai giáp phẩm DIVINE.,20
+ORE_AMULET_DIVINE,Thần Tiêu Linh Phù Khoáng,AMULET,DIVINE,Chỉ dùng để chế dây chuyền/phù phẩm DIVINE.,20
+ORE_BOOTS_DIVINE,Thần Tiêu Hành Bộ Khoáng,BOOTS,DIVINE,Chỉ dùng để chế giày/ủng phẩm DIVINE.,20
+ORE_RING_DIVINE,Thần Tiêu Giới Chỉ Khoáng,RING,DIVINE,Chỉ dùng để chế nhẫn phẩm DIVINE.,20
+ORE_OFF_HAND_DIVINE,Thần Tiêu Phụ Bảo Khoáng,OFF_HAND,DIVINE,Chỉ dùng để chế pháp bảo tay phụ phẩm DIVINE.,20
+ORE_WEAPON_DIVINE,Thần Tiêu Binh Nhận Khoáng,WEAPON,DIVINE,Chỉ dùng để chế vũ khí phẩm DIVINE.,20
+ORE_PET_DIVINE,Thần Tiêu Linh Thú Khoáng,PET,DIVINE,Chỉ dùng để chế Linh Thú/PET phẩm DIVINE.,20
+ORE_HELM_RELIC,Bất Hủ Khôi Khoáng,HELM,RELIC,Chỉ dùng để chế mũ/đạo quan phẩm RELIC.,20
+ORE_CHEST_RELIC,Bất Hủ Giáp Khoáng,CHEST,RELIC,Chỉ dùng để chế giáp thân phẩm RELIC.,20
+ORE_SHOULDER_RELIC,Bất Hủ Hộ Kiên Khoáng,SHOULDER,RELIC,Chỉ dùng để chế vai giáp phẩm RELIC.,20
+ORE_AMULET_RELIC,Bất Hủ Linh Phù Khoáng,AMULET,RELIC,Chỉ dùng để chế dây chuyền/phù phẩm RELIC.,20
+ORE_BOOTS_RELIC,Bất Hủ Hành Bộ Khoáng,BOOTS,RELIC,Chỉ dùng để chế giày/ủng phẩm RELIC.,20
+ORE_RING_RELIC,Bất Hủ Giới Chỉ Khoáng,RING,RELIC,Chỉ dùng để chế nhẫn phẩm RELIC.,20
+ORE_OFF_HAND_RELIC,Bất Hủ Phụ Bảo Khoáng,OFF_HAND,RELIC,Chỉ dùng để chế pháp bảo tay phụ phẩm RELIC.,20
+ORE_WEAPON_RELIC,Bất Hủ Binh Nhận Khoáng,WEAPON,RELIC,Chỉ dùng để chế vũ khí phẩm RELIC.,20
+ORE_PET_RELIC,Bất Hủ Linh Thú Khoáng,PET,RELIC,Chỉ dùng để chế Linh Thú/PET phẩm RELIC.,20
+ORE_HELM_GOD,Chư Thiên Khôi Khoáng,HELM,GOD,Chỉ dùng để chế mũ/đạo quan phẩm GOD.,20
+ORE_CHEST_GOD,Chư Thiên Giáp Khoáng,CHEST,GOD,Chỉ dùng để chế giáp thân phẩm GOD.,20
+ORE_SHOULDER_GOD,Chư Thiên Hộ Kiên Khoáng,SHOULDER,GOD,Chỉ dùng để chế vai giáp phẩm GOD.,20
+ORE_AMULET_GOD,Chư Thiên Linh Phù Khoáng,AMULET,GOD,Chỉ dùng để chế dây chuyền/phù phẩm GOD.,20
+ORE_BOOTS_GOD,Chư Thiên Hành Bộ Khoáng,BOOTS,GOD,Chỉ dùng để chế giày/ủng phẩm GOD.,20
+ORE_RING_GOD,Chư Thiên Giới Chỉ Khoáng,RING,GOD,Chỉ dùng để chế nhẫn phẩm GOD.,20
+ORE_OFF_HAND_GOD,Chư Thiên Phụ Bảo Khoáng,OFF_HAND,GOD,Chỉ dùng để chế pháp bảo tay phụ phẩm GOD.,20
+ORE_WEAPON_GOD,Chư Thiên Binh Nhận Khoáng,WEAPON,GOD,Chỉ dùng để chế vũ khí phẩm GOD.,20
+ORE_PET_GOD,Chư Thiên Linh Thú Khoáng,PET,GOD,Chỉ dùng để chế Linh Thú/PET phẩm GOD.,20

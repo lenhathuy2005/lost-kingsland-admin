@@ -1,0 +1,26 @@
+LOST KINGSLAND ADMIN V7.1
+========================
+
+Current upgrade focus:
+- 10 static resource icons.
+- 90 equipment-specific crafting ores (9 slots x 10 rarities).
+- Admin page: Tài nguyên & Ore.
+- Direct image replace/delete from Windows.
+- Shared PostgreSQL media for Admin/Web/Discord Bot.
+
+FAST PATH
+1. In DBeaver on lost_kingsland_v4_reconciled run:
+   sql\00_RUN_THIS_IN_DBEAVER_V71.sql
+2. Start Admin:
+   .\run_admin.bat
+3. Ctrl+F5 in browser.
+4. Open Tài nguyên & Ore.
+5. Click "Gắn demo 100 icon".
+
+CLI alternative after SQL:
+   .\APPLY_V71_RESOURCE_ORE_MEDIA.bat
+
+Check:
+   .\CHECK_V71_RESOURCE_ORE_MEDIA.bat
+
+Full details: INSTALL_V70_READ_ME_FIRST.txt and docs\V70_RESOURCE_ORE_SYSTEM.md

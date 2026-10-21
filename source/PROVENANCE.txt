@@ -1,0 +1,15 @@
+Lost Kingsland Admin V27 Studio provenance
+
+Original design/reference inputs retained:
+1. Lost_Kingsland_Master_GDD_v4.0_Combat_Engine_Multi_March_Cultivation(1).docx
+2. Lost_Kingsland_Master_GDD_v4.0_Multi_March_Market_Cultivation(1).docx
+3. Lost_Kingsland_PostgreSQL_Schema_v2.0_Multi_March_Market_Cultivation(2).sql
+4. lost_kingsland_FULL_202608120014.sql (historical package snapshot)
+
+Current offline snapshot source:
+5. lost_kingsland_FULL_202608141932.sql (final V27 / LK-V4.0-P15-RC-001 dump)
+
+Runtime source of truth is NOT the packaged dump. In live mode Admin connects directly to:
+lost_kingsland_v4_reconciled
+
+No gameplay source files are overwritten by the Admin package.
