@@ -34,7 +34,7 @@ from pathlib import Path
 from typing import Any
 from urllib.parse import quote
 
-from fastapi import FastAPI, File, Header, HTTPException, Query, UploadFile
+from fastapi import FastAPI, File, Header, HTTPException, Query, Request, UploadFile
 from fastapi.responses import FileResponse, JSONResponse, Response
 from fastapi.staticfiles import StaticFiles
 
@@ -99,6 +99,35 @@ except Exception:  # pragma: no cover
 app = FastAPI(title="Lost Kingsland Admin", version="7.2.0", docs_url="/api/docs", redoc_url=None)
 app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 app.mount("/media", StaticFiles(directory=MEDIA_DIR), name="media")
+
+
+def _local_request_host(request: Request) -> bool:
+    if ADMIN_ALLOW_REMOTE_NO_AUTH:
+        return True
+    hosts = [request.url.hostname, request.headers.get("x-forwarded-host", "")]
+    forwarded = request.headers.get("forwarded", "")
+    hosts.extend(re.findall(r"(?i)(?:^|;)\s*host=([^;,]+)", forwarded))
+    for host in hosts:
+        host = host.strip().strip('"').lower()
+        if host.startswith("["):
+            host = host[1:].split("]", 1)[0]
+        elif host.count(":") == 1:
+            host = host.rsplit(":", 1)[0]
+        if host and host not in _LOCAL_HOSTS:
+            return False
+    return True
+
+
+@app.middleware("http")
+async def protect_admin_reads(request: Request, call_next):
+    path = request.url.path
+    protected = path.startswith("/api/") and path not in {"/api/health", "/api/docs"} and not path.startswith("/api/public/")
+    if protected and not (LOCAL_OWNER_EFFECTIVE and _local_request_host(request)):
+        if not ADMIN_TOKEN:
+            return JSONResponse({"detail": "ADMIN_TOKEN is not configured; refusing admin access."}, status_code=503)
+        if not secrets.compare_digest(request.headers.get("x-admin-token", ""), ADMIN_TOKEN):
+            return JSONResponse({"detail": "Invalid X-Admin-Token."}, status_code=401)
+    return await call_next(request)
 
 # One-click test-media tools. The public placeholder sources are mapped in media_seed_urls.csv;
 # the actual bytes are cached into PostgreSQL shared media so Bot/Web do not depend on the remote URL later.
@@ -257,7 +286,7 @@ def require_write_token(x_admin_token: str | None) -> None:
         return
     if not ADMIN_TOKEN:
         raise HTTPException(status_code=503, detail="ADMIN_TOKEN is not configured; refusing write access.")
-    if x_admin_token != ADMIN_TOKEN:
+    if not secrets.compare_digest(x_admin_token or "", ADMIN_TOKEN):
         raise HTTPException(status_code=401, detail="Invalid X-Admin-Token.")
 
 
@@ -574,16 +603,6 @@ def health() -> dict[str, Any]:
         "ok": True,
         "version": "7.2.0",
         "mode": "live" if live_mode() else "snapshot",
-        "gameplay_config": ADMIN_GAMEPLAY_CONFIG,
-        "write_enabled": WRITE_ENABLED,
-        "auth_mode": "local-owner" if LOCAL_OWNER_EFFECTIVE else "token",
-        "auth_required": not LOCAL_OWNER_EFFECTIVE,
-        "admin_account": ADMIN_OWNER_NAME if LOCAL_OWNER_EFFECTIVE else None,
-        "media_backend": effective_media_backend(),
-        "media_dir": str(MEDIA_DIR),
-        "media_public_base_url": MEDIA_PUBLIC_BASE_URL or None,
-        "media_db_ready": media_db_table_exists(),
-        "db_permissions": _db_permission_capabilities(),
     }
 
 

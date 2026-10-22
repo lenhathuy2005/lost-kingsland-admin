@@ -148,7 +148,13 @@ http://127.0.0.1:8787/api/health
 Kỳ vọng:
 
 ```text
+ok = true
 mode = live
+```
+
+Các trường cấu hình chi tiết chỉ có ở `/api/meta`; ngoài Local Owner Mode, gửi header `X-Admin-Token`:
+
+```text
 gameplay_config = LK-V4.0-P15-RC-001
 media_db_ready = true
 ```

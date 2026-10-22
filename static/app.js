@@ -130,7 +130,18 @@ function showNotice(msg, type='') {
 function hideNotice() { noticeEl.className = 'notice hidden'; }
 
 async function api(path, opts={}) {
-  const res = await fetch(path, opts);
+  const headers = new Headers(opts.headers || {});
+  const savedToken = sessionStorage.getItem('lk_admin_token');
+  if (savedToken && !headers.has('X-Admin-Token')) headers.set('X-Admin-Token', savedToken);
+  let res = await fetch(path, {...opts, headers});
+  if (res.status === 401) {
+    const token = prompt('Nhập ADMIN_TOKEN để truy cập Admin:') || '';
+    if (token) {
+      sessionStorage.setItem('lk_admin_token', token);
+      headers.set('X-Admin-Token', token);
+      res = await fetch(path, {...opts, headers});
+    }
+  }
   const body = await res.json().catch(() => ({}));
   if (!res.ok) throw new Error(body.detail || `${res.status} ${res.statusText}`);
   return body;
